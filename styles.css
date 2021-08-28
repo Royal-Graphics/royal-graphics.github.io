@@ -20,12 +20,19 @@ nav{
 nav ul{
     display: inline-block;
     list-style-type: none;
+    
 }
 
 nav ul a{
     display: inline-block;
+    color: #555;
     margin-right: 20px;
     font-size: 21px;
+}
+
+nav ul a:hover{
+    color: rgb(10, 10, 10);
+   transition: 0.2s;
 }
 
 
