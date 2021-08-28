@@ -31,7 +31,7 @@ nav ul a{
 }
 
 nav ul a:hover{
-    color: rgb(10, 10, 10);
+    color: rgb(10, 10, 10); 
    transition: 0.2s;
 }
 
