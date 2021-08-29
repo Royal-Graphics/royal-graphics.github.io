@@ -7,7 +7,6 @@
     display: flex;
     align-items: center;
     padding-top: 50px;
-    
 }
 
 
@@ -20,7 +19,6 @@ nav{
 nav ul{
     display: inline-block;
     list-style-type: none;
-    
 }
 
 nav ul a{
@@ -62,6 +60,7 @@ h1{
     color: rgb(36, 36, 36);
     font-size: 30px;
     text-align: center;
+
 }
 
 h2{
@@ -77,6 +76,7 @@ h2{
 .row{
     text-align: center;
     padding-top: 80px;
+
 }
 
 .btn{
@@ -144,4 +144,29 @@ h2{
  .deeds{
      flex:1;
      order:5;
+ }
+
+ @media only screen and (max-width: 800px){
+     nav ul{
+         position: absolute;
+         top: 70px;
+         left: 0;
+         width: 100%;
+     }
+
+     nav ul a{
+        display: block;
+        margin-right: 50px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+     }
+
+    @media only screen and (max-width: 600px){
+        .row{
+            text-align: center;
+        }
+        .conta{
+            flex-basis: 100%;
+        }
+    }
  }
