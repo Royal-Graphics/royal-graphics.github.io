@@ -3,11 +3,19 @@
     padding: 0;
     box-sizing: 0;
 }
+
 .navbar{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding-top: 50px;
+    width: 100%;
 }
+
+.main{
+    width: 100%;
+}
+
 
 
 
@@ -60,7 +68,7 @@ h1{
     color: rgb(36, 36, 36);
     font-size: 30px;
     text-align: center;
-
+    padding-bottom: 10px;
 }
 
 h2{
@@ -112,9 +120,12 @@ h2{
     
   }
 
- .advertFlex{
+  .advertFlex{
     display: flex;
     text-align: center;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-around;
  }
 
 .advert h1{
@@ -122,51 +133,42 @@ h2{
 }
 
 .midnight{
-    flex:1;
+    flex-basis:20%;
     order:1;
  }
 
  .td{
-     flex:1;
+     flex-basis:20%;
      order:2;
  }
 
  .tanny{
-     flex:1;
+     flex-basis:20%;
      order:3;
  }
 
  .hamza{
-     flex:1;
+     flex-basis:20%;
      order:4;
  }
 
  .deeds{
-     flex:1;
+     flex-basis:20%;
      order:5;
  }
 
- @media only screen and (max-width: 800px){
-     nav ul{
-         position: absolute;
-         top: 70px;
-         left: 0;
-         width: 100%;
-     }
-
-     nav ul a{
-        display: block;
-        margin-right: 50px;
-        margin-top: 5px;
-        margin-bottom: 10px;
-     }
-
-    @media only screen and (max-width: 600px){
-        .row{
-            text-align: center;
-        }
-        .conta{
-            flex-basis: 100%;
-        }
+ @media (max-width: 900px) {
+    .advertFlex {
+        display: flex;
+        text-align: center;
+        width: 100%;
+        
     }
- }
+    .midnight, .td, .tanny, .hamza, .deeds{
+        flex-basis: 100%;
+    }
+
+    nav ul{
+        display: none;
+    }
+  }
