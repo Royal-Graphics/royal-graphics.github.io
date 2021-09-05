@@ -27,8 +27,26 @@
    ==============*/
 
    .main{
+   
+.main {
     width: 100%;
+    background-color: var(--background);
 }
+
+    hr.solid {
+        border-top: 1px solid #bbb;
+        width: 75%;
+        margin:0 auto;
+        
+    }
+
+    .small_container {
+        padding-top: 80px;
+        max-width: 75%;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 
    .container{
     max-width: 1500px;
@@ -43,7 +61,10 @@
     .row{
     text-align: center;
     padding-top: 80px;
+    
 }
+
+  
 
 /* ==============
     Typography 2
@@ -75,6 +96,15 @@
         font-family: 'Open Sans', sans-serif;
         color: rgb(36, 36, 36);
         font-size: 25px;
+        text-align: center;
+        padding-top: 90px;
+        width: 100%;
+    }
+
+    h4{
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(36, 36, 36);
+        font-size: 20px;
         text-align: center;
         padding-top: 90px;
         width: 100%;
@@ -258,6 +288,27 @@ nav ul a:hover{
         order:5;
     }
 
+    .row-shop {
+        display: flex;
+        text-align: center;
+        width: 100%;
+        flex-flow: row wrap;
+        margin: auto;
+        justify-content: space-around;
+    }
+
+    .col4 {
+        flex-basis: 40%;
+        padding: 10px;
+        min-width: 10px;
+        margin-bottom: 50px;
+    }
+
+    .col4 img {
+        width: 100%;
+        padding-top: 20px;
+    }
+
 /* ==============
     Responsive CSS 5
    ==============*/
@@ -297,6 +348,7 @@ nav ul a:hover{
         padding-top: 30px;
     }
 
+    
 
   }
 

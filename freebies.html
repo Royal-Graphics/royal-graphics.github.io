@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="https://i.ibb.co/rxmRJJV/scaled.png"> 
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freebies.</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="main">
+        <div class="container">  
+            <div class="navbar">
+                <div class="logo">
+                    <h1>Royal Graphics.</h1>
+                </div>
+                <nav>
+                    <ul id="MenuItems"> 
+                     <a href="index.html">Home</a> 
+                     <a href="freebies.html">Freebies</a> 
+                    </ul> 
+                </nav>
+                <img src="images/materialIcons/baseline_reorder_black_24dp.png" class="menu-icon" 
+                onclick="menutoggle()">
+            </div> 
+            <div class="row"> 
+                <div class="text">
+                    <h1>Freebies</h1> 
+                </div>
+            </div>
+
+            <hr class="solid">
+
+            <div class="small_container">
+                   <div class="row-shop">
+                       <div class="col4">
+                           <img src="images/freebies/killer.jpg" width="500px" alt="">
+                           <h2>Royal Graphics GFX Pack</h2>
+                           <a href="" rel="noopener noreferrer" target="_blank" class=btn>Download</a>
+                       </div>
+                       <div class="col4">
+                        <img src="images/freebies/killer.jpg" width="500px" alt="">
+                        <h2>Royal Graphics GFX Pack</h2>
+                        <a href="" rel="noopener noreferrer" target="_blank" class=btn>Download</a>
+                    </div>
+                    <div class="col4">
+                        <img src="images/freebies/killer.jpg" width="500px" alt="">
+                        <h2>Royal Graphics GFX Pack</h2>
+                        <a href="" rel="noopener noreferrer" target="_blank" class=btn>Download</a>
+                    </div>
+                       
+                   </div> 
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div>
+        <footer>
+            <div class="footer">
+                <div class="inner_footer">
+                    <div class="logo_container">
+                        <h1>Royal Graphics.</h1>
+                    </div>
+                    <div class="footer_third">
+                        <a class="bottom" href="https://discord.gg/KpXXsyewXc" rel="noopener noreferrer" target="_blank"><img src="images/socialIcons/lighttheme/discordDefault.png" alt="Discord Server" style="width:42px;height:42px;"></a>
+                        <a class="bottom" href="https://www.youtube.com/channel/UCYmnubXTuaUz7gSZn5is74A" rel="noopener noreferrer" target="_blank"><img src="images/socialIcons/lighttheme/youtubeDefault.png" alt="Youtube Channel" style="width:42px;height:42px;"></a>
+                        <a class="bottom" href="https://twitter.com/IRoyalGraphics" rel="noopener noreferrer" target="_blank"><img src="images/socialIcons/lighttheme/twitterDefault.png" alt="Twitter Account" style="width:42px;height:42px;"></a>
+                    </div>
+                    <div class="footer_third">
+                        <a href="index.html">Home</a> 
+                        <a href="freebies.html">Freebies</a> 
+                    </div>
+                </div>
+         </div> 
+        </footer>
+
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+        
+            MenuItems.style.maxHeight = "0px";
+        
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+</body>
+
+</html>
