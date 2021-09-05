@@ -132,6 +132,7 @@ h2{
     text-align: center;
     width: 100%;
     flex-flow: row wrap;
+    padding: 5px;
     justify-content: space-around;
  }
 
