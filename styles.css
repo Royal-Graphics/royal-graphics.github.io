@@ -16,8 +16,11 @@
     width: 100%;
 }
 
+.menu-icon {
+    width: 37px;
+  display: none;
 
-
+}
 
 nav{
     flex: 1;
@@ -27,6 +30,7 @@ nav{
 nav ul{
     display: inline-block;
     list-style-type: none;
+
 }
 
 nav ul a{
@@ -52,6 +56,7 @@ a{
 p{
     color: #555; 
     font-family: 'Open Sans', sans-serif;
+    width: 100%;
 }
 
 .container{
@@ -59,8 +64,8 @@ p{
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
-    padding-bottom: 320px;
-    padding-top: 80px;
+    padding-bottom: 160px;
+    padding-top: 40px;
 }
 
 h1{
@@ -69,6 +74,8 @@ h1{
     font-size: 30px;
     text-align: center;
     padding-bottom: 10px;
+  
+    width: 100%;
 }
 
 h2{
@@ -77,8 +84,8 @@ h2{
     font-size: 25px;
     text-align: center;
     padding-top: 90px;
+    width: 100%;
 }
-
 
 
 .row{
@@ -157,18 +164,89 @@ h2{
      order:5;
  }
 
+/*Responsive */
+
  @media (max-width: 900px) {
-    .advertFlex {
-        display: flex;
-        text-align: center;
-        width: 100%;
-        
-    }
-    .midnight, .td, .tanny, .hamza, .deeds{
-        flex-basis: 100%;
-    }
+    
+.menu-icon {
+    display: block;
+    cursor: pointer;
+}
 
     nav ul{
-        display: none;
+        position: absolute;
+        top: 130px;
+        left: 0;
+        background: rgb(238, 238, 238);
+        width: 100%;
+        overflow: hidden;
+        transition: 1s;
     }
+
+    nav ul a{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: rgb(0, 0, 0);
+        transition: overflow 0.2s;
+    }
+
+
+    .deeds, .hamza, .tanny, .td, .midnight {
+        width: 100%;
+    }
+
+    .aboutUs h1{
+        padding-top: 30px;
+    }
+
+
   }
+
+  img { max-width: 100%; height: auto; }
+
+  @media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
+
+/*Footer */
+
+.footer {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
+    background-color: rgb(243, 243, 243);
+}
+
+.inner_footer {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+}
+
+.inner_footer .logo_container {
+    width: 35%;
+    float: left;
+    height: 100%;
+    display: block;
+}
+
+.inner_footer .footer_third p{
+    padding-top: 10px;
+}
+
+.inner_footer .footer_third {
+    width: cal(21.6666666667% - 20px);
+}

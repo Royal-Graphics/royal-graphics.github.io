@@ -21,12 +21,14 @@
                     <h1>Royal Graphics.</h1>
                 </div>
                 <nav>
-                    <ul> 
+                    <ul id="MenuItems"> 
                      <a href="">Home</a> 
                      <a href="">Freebies</a> 
                      <a href="">Contact Us</a>
                     </ul> 
                 </nav>
+                <img src="images/materialIcons/baseline_reorder_black_24dp.png" class="menu-icon" 
+                onclick="menutoggle()">
             </div> 
             <div class="row"> 
                 <div class="text">
@@ -64,8 +66,8 @@
                         <div class="hamza"> 
                             <img src="images/hammyz.png" width="200">
                             <h1>hamza</h1>
-                            <p>GFX, Bot Development, Video Editing</p>
-                            <a href="https://twitter.com/AlwaysHamzaa/status/1323396679190618123" rel="noopener noreferrer" target="_blank" class=btn>Commission Sheet</a>
+                            <p>GFX + Bot Development</p>
+                            <a href="https://twitter.com/AlwaysHamzaa/status/1323396679190618123" rel="noopener noreferrer" target="_blank" class=btn>Commission</a>
                         </div>
                         <div class="tanny">
                             <img src="images/tanman.png" width="200">
@@ -84,10 +86,42 @@
                    
                 </div>
             </div>
+
             
+           
+           
+        
     </div>
     
-        
+        <footer>
+            <div class="footer">
+                <div class="inner_footer">
+                    <div class="logo_container">
+                        <h1>Royal Graphics.</h1>
+                    </div>
+                    <div class="footer_third">
+                        <p>https://discord.gg/wybKpSzNvz</p>
+                    </div>
+                </div>
+         </div>
+        </footer>
        
+        <!---js--->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
 <body>   
 <html>
